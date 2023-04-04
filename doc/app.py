@@ -32,7 +32,7 @@ app=Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template('home.html' )
+    return render_template('index.html' )
 @app.route("/gallery")
 def gallery():
     return render_template('gallery.html')
