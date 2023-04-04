@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Courgette&family=Lobster&family=Poppins&family=Satisfy&family=Sono&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: rgba(204, 238, 244, 0.993);
+
+}
+
+.navbar {
+    padding: 0;
+    margin: 0 20px;
+    transition: 2s ease;
+    display: none;
+    position: absolute;
+    background-color: rgb(166, 97, 246);
+}
+
+#navbar li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    font-family: 'Chakra Petch';
+}
+
+#navbar li a:hover{
+    outline: 2px solid rgb(255, 253, 253);
+    outline-style: dashed;
+    cursor: pointer;
+}
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 6px 0 20px 20px;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.box {
+    background-color: rgb(58, 117, 151);
+    height: 0.5vmax;
+    width: 3.5vw;
+    display: block;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    z-index: 3;
+}
+
+#box1 {
+    transform: translateY(-4px);
+}
+
+#box3 {
+    transform: translateY(4px);
+}
+
+.icon .box {
+    background-color: rgb(255, 255, 255);
+}
+
+.icon #box1 {
+    transform: translateY(4px) rotate(-45deg);
+}
+
+.icon #box3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.icon #box2 {
+    opacity: 0;
+}
+
+.change {
+    background-color: rgb(58, 117, 151);
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    font-size: 30px;
+    top: 0;
+    z-index: 2;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#about{
+    background-color: rgb(226, 243, 248);
+    border-radius: 10px;
+    margin: 10vh 10vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#about h2{
+    font-family: Ubuntu;
+    font-size: 2.8vmax;
+    margin: 3vh;
+}
+
+#about p{
+    font-family: Ubuntu;
+    font-size: 1.7vmax;
+    margin: 3vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    .change {
+        width: 40%
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .change {
+        width: 100%
+    }
+}
+
+#intro {
+    background: url('../static/kv no1/bg2.jpg') center center/cover;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    opacity: 1;
+}
+
+#bar {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#bar img {
+    height: 6vh;
+    width: auto;
+    margin-right: 10px;
+}
+
+#nav2 {
+    display: flex;
+}
+
+#nav2 li {
+    list-style: none;
+    padding: 1vmax 5vmax;
+}
+
+#nav2 li a {
+    color: rgb(58, 117, 151);
+    text-decoration: none;
+    font-family: 'Chakra Petch', 'Trebuchet MS', sans-serif;
+    font-size: 1.6vmax;
+}
+#nav2 li a:hover {
+    color: rgb(43, 157, 223);
+    border-bottom: 3px solid rgb(43, 157, 223);
+}
+#center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid rgb(87, 113, 152);
+    display: flex;
+    background-color: rgba(203, 220, 236, 0.896);
+    margin-top: 65vh;
+    width: 80%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#container h2 {
+    padding: 15px 50px;
+    font-size: 2.5vmax;
+    font-family: 'Satisfy','Sono', sans-serif;
+}
+
+.gallery {
+    margin: 11vh 0;
+    border-top: 2px dashed black;
+}
+
+.gallery h2{
+    font-family: 'Courgette';
+    color: rgb(55, 93, 154);
+    font-size: 4vmax;
+}
+#photo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.img{
+    height: 40vh;
+    padding: 25px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(252, 240, 242);
+    width: 50%;
+    margin: 0 25% 10vh 25%;
+    border-radius: 16px;
+}
+.contact input{
+    width: 40%;
+    padding: 0.4vmax;
+    margin: 3vmax;
+}
+#btn{
+    background-color: rgb(255, 255, 255);
+    width: 35%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+

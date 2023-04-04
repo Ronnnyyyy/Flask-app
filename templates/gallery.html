@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+<section>
+    <div id="center">
+        <div id="container">
+            <h2>Embark on a life Changing journey with Kendriya Vidyalaya</h2>
+        </div>
+        <div id="gallery" class="gallery">
+            <h2>~Featured Photos~</h2>
+
+        </div>
+    </div>
+    <div id="photo">
+        <img src="{{url_for('static',filename='/kv no1/mam.jpeg')}}" id="img1" class="img">
+        <img src="{{url_for('static',filename='/kv no1/comp.jpg')}}" alt="" id="img2" class="img">
+        <img src="{{url_for('static',filename='/kv no1/main_gate.jpg')}}" alt="" id="img3" class="img">
+    </div>
+    <div id="center">
+        <div class="gallery">
+            <h2>~Our Photos~</h2>
+
+        </div>
+    </div>
+    <div id="photo">
+        <img src="{{url_for('static',filename='/kv no1/us.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/g20.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/g202.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/7.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/2.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/3.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/4.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/5.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/8.jpg')}}" alt="error loading image" class="img">
+        <img src="{{url_for('static',filename='/kv no1/9.jpg')}}" alt="error loading image" class="img">
+    </div>
+</section>
+{% endblock %}

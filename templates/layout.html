@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendriya Vidyalaya</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div id="bar">
+        <span id="navigation">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="box1" class="box"></div>
+                <div id="box2" class="box"></div>
+                <div id="box3" class="box"></div>
+            </div>
+            <ul class="navbar" id="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </span>
+        <div id="intro">
+            
+        </div>
+
+        <ul id="nav2">
+            <li><a href="/">Home</a></li>
+            <li><a href="gallery">Gallery</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+        <img src="{{url_for('static',filename='/kv no1/logo.png')}}" alt="">
+    </div>
+    </header>
+    {% block body %} {% endblock %}
+    <script src="{{url_for('static',filename='index.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block body %}
+<footer>
+    <div id="center">
+        <div id="container">
+            <h2>Embark on a life Changing journey with Kendriya Vidyalaya</h2>
+        </div>
+        <div class="gallery">
+            <h2 id="contact">~Contact~</h2>
+        </div>
+    </div>
+    <form name="sentMessage" action="/contact" method="post" novalidate class="contact">
+        <input id="name" type="text" name="name" placeholder="Name">
+        <input id="email" type="email" name="email" placeholder="Email">
+        <input id="msg" type="" name="message" placeholder="Message">
+        <input id="btn" type="submit" value="Send">
+    </form>
+
+</footer>
+{% endblock %}
