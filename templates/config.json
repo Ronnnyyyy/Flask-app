@@ -4,7 +4,7 @@
         "local_server": "True",
         "local_uri": "mysql://root:@localhost/school",
         "prod_uri": "mysql://root:@localhost/school",
-        "user_mail": "iamwhatiwant7@gmail.com",
-        "user_pass": "emtosdcshlfzwwrb"
+        "user_mail": "example@gmail.com",
+        "user_pass": "example_pass"
     }
 }
